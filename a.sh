@@ -1,8 +1,8 @@
 #!/bin/bash
 
-$token = $env:GH_TOKEN
-$user  = $env:GH_USER
-$repo  = $env:GH_REPO
+$token = $GH_TOKEN
+$user  = $GH_USER
+$repo  = $GH_REPO
 
 $textContent = "hello from remote"
 $base64Content = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($textContent))
